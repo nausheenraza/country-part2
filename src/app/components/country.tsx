@@ -1,5 +1,5 @@
 import Link from "next/link";
-export default function CountryDetails(data:any) {
+export default function CountryName(data: { countryinfo?: { name: string; population: number; capital: string }; url: string }) {
     return (
       <div>
         {data.countryinfo ?(

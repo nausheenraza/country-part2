@@ -1,10 +1,10 @@
 import "@/app/globals.css";
-import Link from "next/link";
+// import Link from "next/link";
 import Country from "@/app/components/country";
 
 
 
-export default function countryname({params}:any) {
+export default function countryname({ params }: { params: { country_name: string }; }) {
 
     const countries:{
         name: string,
@@ -36,7 +36,7 @@ export default function countryname({params}:any) {
  
         }
 
-       let result = findcountry(params.country_name)
+      const result = findcountry(params.country_name)
 
 
     return (
